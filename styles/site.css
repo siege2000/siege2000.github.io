@@ -1,0 +1,32 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+body{
+    display: grid;
+    grid-template-areas: 'header header header'
+    'nav nav nav'
+    'main main main'
+    'footer footer footer';
+    grid-gap:10px;
+    grid-auto-rows:minmax(100px,auto);
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows:min-content;
+
+
+    
+}
+header{
+    grid-area: header;
+}
+
+nav{
+    grid-area: nav;
+}
+
+main{
+    grid-area: main;
+}
